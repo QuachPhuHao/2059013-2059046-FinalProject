@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DeThi>
+	<Cau>
+		<Cauhoi>Mục nào sau đây trong Windows XP dùng để kiểm tra các thiết bị đã được cài đặt driver hay chưa?</Cauhoi>
+		<A> System Information</A>
+		<B> Device Manager</B>
+		<C> System Configuration Uitlity</C>
+		<D> Registry Editor</D>
+		<DapAn> Device Manager </DapAn>
+	</Cau>
+	<Cau>
+		<Cauhoi>Modem gắn ngoài được kết nối với máy tính thông qua cổng nào sau đây?</Cauhoi>
+		<A> COM</A>
+		<B> LPT</B>
+		<C> IEEE 1394</C>
+		<D> RJ 45</D>
+		<DapAn> COM </DapAn>
+	</Cau>
+	<Cau>
+		<Cauhoi>Lệnh Create trong chương trình Partition Magic có tác dụng gì?</Cauhoi>
+		<A> Xoá phân vùng</A>
+		<B> Tạo mới phân vùng</B>
+		<C> Định dạng phân vùng</C>
+		<D> Thay đổi kích thước phân vùng</D>
+		<DapAn> Tạo mới phân vùng</DapAn>
+	</Cau>
+	<Cau>
+		<Cauhoi>Tốc độ 1x chuẩn của ổ đĩa CD-ROM thường có giá trị là?</Cauhoi>
+		<A> 1024 KBps </A>
+		<B> 150 KBps </B>
+		<C> 1500 KBps </C>
+		<D> 2048 KBps </D>
+		<DapAn>150 KBps </DapAn>
+	</Cau>
+	<Cau>
+		<Cauhoi>Tốc độ truyền dữ liệu tối đa của chuẩn USB 2.0 là?</Cauhoi>
+		<A> 1.5 Mbps</A>
+		<B> 12 Mbps</B>
+		<C> 400 Mbps</C>
+		<D> 480 Mbps</D>
+		<DapAn> 12 Mbps</DapAn>
+	</Cau>
+	<Cau>
+		<Cauhoi>Cơ chế truyền dẫn nào sau đây cho phép thiết bị có thể truy xuất trực tiếp đến bộ nhớ mà không cần thông qua vi xử lý? </Cauhoi>
+		<A> S.M.A.R.T</A>
+		<B> DMA</B>
+		<C> PIO</C>
+		<D> IRQ</D>
+		<DapAn> DMA</DapAn>
+	</Cau>
+</DeThi>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PhanMem>
+	<Cau>
+		<Cauhoi>Mô hình kiểm thử phần mềm TMM viết tắt của từ tiếng anh nào sau đây?</Cauhoi>
+		<A>Testing Maturity Model</A>
+		<B>Testing Model Manufactory</B>
+		<C>Testing Manufactory Model</C>
+		<D>Testing Manual Machanic</D>
+		<DapAn>2</DapAn>
+	</Cau>
+	<Cau>
+		<Cahoi>Phát biểu nào sau đây là sai về thiết kế kiểm thử?</Cahoi>
+		<A>Thực thi sau khi co bản kế hoạch kiểm thử</A>
+		<B>Chỉ định các test case cũng như các bước kiểm tra thử</B>
+		<C>Có thể dùng cho mọi phiên bản phần mềm</C>
+		<D>Bảo đảm tất cả các tình huống kiểm thử được quét hết</D>
+		<DapAn>1</DapAn>
+	</Cau>
+	<Cau>
+		<Cahoi>Hệ điều hành là</Cahoi>
+		<A>Phần mềm hệ thống</A>
+		<B>Phần mềm công cụ</B>
+		<C>Phần mềm ứng dụng</C>
+		<D>Phần mềm tiện ích</D>
+		<DapAn>2</DapAn>
+	</Cau>
+	<Cau>
+		<Cauhoi>Phần mềm soạn thảo văn bản Microsoft Word là:</Cauhoi>
+		<A>Phần mềm hệ thống</A>
+		<B>Phần mềm công cụ</B>
+		<C>Phần mềm ứng dụng</C>
+		<D>Phần mềm tiện ích</D>
+		<DapAn> 2</DapAn>
+	</Cau>
+	<Cau>
+		<Cauhoi>Phần mềm duyệt virus là:</Cauhoi>
+		<A>Phần mềm hệ thống</A>
+		<B>Phần mềm công cụ</B>
+		<C>Phần mềm ứng dụng</C>
+		<D>Phần mềm tiện ích</D>
+		<DapAn> 4 </DapAn>
+	</Cau>
+	<Cau>
+		<Cauhoi>Phần mềm công cụ:</Cauhoi>
+		<A>Tạo môi trường làm việc cho các phần mềm khác</A>
+		<B>Hỗ trợ việc làm ra các sản phẩm phần mềm khác </B>
+		<C>Giúp việc làm với máy tính thuận lợi hơn</C>
+		<D>Giải quyết những công việc thường gặp</D>
+		<DapAn> 2</DapAn>
+	</Cau>
+</PhanMem>
