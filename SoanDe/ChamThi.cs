@@ -30,7 +30,6 @@ namespace SoanDe
             {
                 Cauhoi dapAn = new Cauhoi();
                 reader.ReadToFollowing("HoTenThiSinh");
-                dapAn.
 
                 reader.ReadToFollowing("CauTraLoi");
                 dapAn.TraLoi = reader.ReadElementContentAsInt();

@@ -55,6 +55,7 @@ namespace SoanDe
             this.CauD = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.DapAn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnChamThi = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -325,12 +326,24 @@ namespace SoanDe
             this.DapAn.Text = "Đáp án";
             this.DapAn.Width = 86;
             // 
+            // btnChamThi
+            // 
+            this.btnChamThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChamThi.Location = new System.Drawing.Point(829, 38);
+            this.btnChamThi.Name = "btnChamThi";
+            this.btnChamThi.Size = new System.Drawing.Size(138, 52);
+            this.btnChamThi.TabIndex = 2;
+            this.btnChamThi.Text = "Chấm thi";
+            this.btnChamThi.UseVisualStyleBackColor = true;
+            this.btnChamThi.Click += new System.EventHandler(this.btnChamThi_Click);
+            // 
             // frmMainSoanDe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1102, 567);
+            this.Controls.Add(this.btnChamThi);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMainSoanDe";
@@ -371,6 +384,7 @@ namespace SoanDe
         private System.Windows.Forms.Button btnInfor;
         private System.Windows.Forms.Button btnClear;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnChamThi;
     }
 }
 

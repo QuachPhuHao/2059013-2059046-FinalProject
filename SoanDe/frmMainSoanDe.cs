@@ -68,10 +68,10 @@ namespace SoanDe
                     list.SubItems.Add(rdD.Text);
                     cauhoi.DapAnDung = 4;
                 }
+
                 lvDS.Items.Add(list);
                 lstCauHoi.Add(cauhoi);
             }
-
             txtCauhoi.Text = txtA.Text = txtB.Text = txtC.Text = txtD.Text = String.Empty;
         }
 
@@ -194,6 +194,12 @@ namespace SoanDe
         {
             lstCauHoi.Clear();
             lvDS.Items.Clear();
+        }
+
+        private void btnChamThi_Click(object sender, EventArgs e)
+        {
+            ChamBai cham = new ChamBai();
+            cham.ShowDialog();
         }
     }
 }

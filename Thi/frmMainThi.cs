@@ -24,16 +24,6 @@ namespace Thi
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 /*------------------------------------------------------------------------------------------------------------------------------*/
         //Tính thời gian thi 
         private void timerTick_Tick(object sender, EventArgs e)
@@ -49,15 +39,13 @@ namespace Thi
                 rbD.Enabled = false;
                 btnNext.Enabled = false;
                 btnPre.Enabled = false;
-                btnDone.Enabled = false;
-                btnStart.Enabled = false;
+
                 //Hết thời gian thì hệ thống vô hiệu hóa các button cần thiết
             }
             txtTime.Text = count.ToString();
         }
-/*------------------------------------------------------------------------------------------------------------------------------*/
-
-        private void btnStart_Click(object sender, EventArgs e)
+        
+        private void Start_Click(object sender, EventArgs e)
         {
             timerTick.Start();
             count = count * lstQues.Count; //thời gian thi * số câu hỏi có trong đề thi (lstCauHoi)
@@ -71,18 +59,18 @@ namespace Thi
             rbD.Enabled = true;
         }
 
-
-        /*------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
         /* Load file đề (xml) lên chương trfinh để bắt đầu thi*/
-        private void btnBrowse_Click(object sender, EventArgs e)
+        private void Open_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
             open.Filter = "De<MaDe> .xml | *.xml";
-            if(open.ShowDialog() == DialogResult.OK)
+            if (open.ShowDialog() == DialogResult.OK)
             {
                 String filepath = open.FileName;
                 ReadFile(filepath);
             }
+            Start.Enabled = true;
         }
 
         private void ReadFile(String filepath)
@@ -184,17 +172,18 @@ namespace Thi
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
         
-        //button Hoàn thành: Kết thúc bài thi và lưu ra file xml.
-        private void btnDone_Click(object sender, EventArgs e)
+        
+        private void Save_Click(object sender, EventArgs e)
         {
             SaveFileDialog save = new SaveFileDialog();
-            save.Filter = "BaiLamDe<MaDe> .xml | *.xml";
-            if(save.ShowDialog() == DialogResult.OK)
+            save.Filter = "De_<Mã đề>_<SBD> .xml | *.xml";
+            if (save.ShowDialog() == DialogResult.OK)
             {
                 String filepath = save.FileName;
                 LuuBaiLam(filepath);
             }
         }
+       
         private void LuuBaiLam(string filepath)
         {
             XmlWriter writer = XmlWriter.Create(filepath, new XmlWriterSettings() { Indent = true });
@@ -217,9 +206,16 @@ namespace Thi
             writer.WriteEndElement();
             writer.Close();
         }
+        
+        private void exit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn thoát?", "Thoát chương trình", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                this.Close();
+        }
+
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
-       
+
         /*Check chung quy chọn đáp án cho từng câu hỏi
          nếu có chọn (không cần biết đáp án nào)
         thì trả về    "true" - Đã chọn đáp án cho câu hỏi
@@ -268,5 +264,7 @@ namespace Thi
         {
             LuuCauTraLoi();
         }
+
+
     }
 }

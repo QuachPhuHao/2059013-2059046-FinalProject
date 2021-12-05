@@ -25,7 +25,6 @@ namespace SoanDe
             this.DapAnDung = 0;
             this.TraLoi = 0;
 
-            this.Name 
         }
 
         public Cauhoi(Cauhoi ques)

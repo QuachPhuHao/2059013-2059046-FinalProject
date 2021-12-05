@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cauhoi.cs" />
+    <Compile Include="ChamBai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChamBai.Designer.cs">
+      <DependentUpon>ChamBai.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChamThi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChamBai.resx">
+      <DependentUpon>ChamBai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChamThi.resx">
       <DependentUpon>ChamThi.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,10 +98,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="PhanCung.xml" />
-    <Content Include="PhanMem.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Thi\Thi.csproj">
